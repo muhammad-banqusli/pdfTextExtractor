@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.app{
+  height: 100vh;
+  background-color:lavender;
+  overflow: auto;
+ 
+}
+
+header{
+  background-color: blueviolet;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  min-height: 100vh;
+}
+
+.main-app{
+  width: 1280px;
+  background-color: white;
+  height: fit-content;
+  padding: 32px 60px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-top: 90px;
+  min-height: 100vh;
+  
+}
+
+button, .file-input{
+  font-size: 24px;
+  padding: 12px 24px;
+  background-color: black;
+  color: white;
+  border-radius: 99px;
+  font-weight: 700;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input{
+  display: none;
+}
+
+.text{
+  
+  width: 100%;
+  max-width: 1280px;
+  
+  word-wrap: break-word;
+  min-height: 100%
+}
+
+
+
+@media (max-width: 1280px) and (min-width: 768px) {
+  /* Styles for mobile devices */
+  .main-app{
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Styles for medium-sized screens */
+  .buttons{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main-app{
+    width: 100%;
+  }
+}
