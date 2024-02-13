@@ -3,9 +3,7 @@ const cors = require("cors");
 const app = express();
 const port = 4500;
 const path = require('path')
-const corsOptions = {
-  origin: "https://pdf-text-extractor-ozgq.onrender.com/",
-};
+const corsOptions = require('./config/corsOptions')
 
 //middleware
 app.use(cors(corsOptions));
