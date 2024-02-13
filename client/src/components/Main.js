@@ -18,7 +18,7 @@ const Main = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:4500/api/pdf/upload",
+                "https://pdftextextractor.onrender.com/api/pdf/upload",
                 formData,
                 {
                     headers: { "Content-Type": "multipart/form-data" },
